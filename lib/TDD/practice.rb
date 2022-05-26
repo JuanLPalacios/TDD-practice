@@ -1,6 +1,4 @@
-# frozen_string_literal: true
-
-require_relative "practice/version"
+require_relative 'practice/version'
 
 module TDD
   module Practice
