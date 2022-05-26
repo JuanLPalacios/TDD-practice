@@ -1,4 +1,5 @@
 class Solver
+  # rubocop:disable  Naming/MethodParameterName
   def factorial(n)
     raise Exception if n.negative?
 
@@ -9,6 +10,7 @@ class Solver
 
     counter
   end
+  # rubocop:ensable  Naming/MethodParameterName
 
   def reverse(word)
     word.reverse
@@ -23,4 +25,5 @@ class Solver
 
     n.to_s
   end
+  # rubocop:enable  Naming/MethodParameterName
 end
