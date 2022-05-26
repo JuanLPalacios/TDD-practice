@@ -1,11 +1,5 @@
 require './solver'
 
-class Solver
-  def factorial(n); end
-  def reverse(word); end
-  def fissbuzz(n); end
-end
-
 describe Solver do
   context 'method factorial' do
     it 'should take one argument, an integer N, and return the factorial for that number' do
