@@ -8,6 +8,8 @@ class Solver
 
     counter
   end
-  def reverse(word); end
+  def reverse(word)
+    word.reverse
+  end
   def fissbuzz(n); end
 end
