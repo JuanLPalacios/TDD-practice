@@ -6,7 +6,7 @@ end
 
 describe Solver do
   context 'method factorial' do
-    it 'should take one argument, an integer N, and returns the factorial for that number' do
+    it 'should take one argument, an integer N, and return the factorial for that number' do
       solver = Solver.new
       n = 4
 
@@ -31,7 +31,15 @@ describe Solver do
       expect { solver.factorial(n) }.to raise_exception
     end
   end
-  # Create a method called reverse that takes one argument, a string word, and returns word reversed (e.g. if word is "hello" it returns "olleh").
+  context 'method reverse' do
+    it 'should take one argument, a string word, and return word reversed' do
+      solver = Solver.new()
+      word = 'hello'
+
+      result = solver.reverse(word)
+
+      expect(result).to eq('olleh')
+  end
   # Create a method called fizzbuzz that takes one argument, an integer N, and returns a string. The returned string is constructed following these rules:
   # When N is divisible by 3, return "fizz".
   # When N is divisible by 5, return "buzz".
